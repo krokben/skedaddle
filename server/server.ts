@@ -18,8 +18,8 @@ app.use(router);
 
 app.use(
   webpackDevMiddleware(compiler, {
-    publicPath: config.output.publicPath,
-  }),
+    publicPath: config.output.publicPath
+  })
 );
 
 // tslint:disable-next-line:no-console
