@@ -7,7 +7,15 @@ import * as config from "../webpack.config.js";
 
 dotenv.config();
 
+import inMemoryStore from "./in-memory-store";
 import { router } from "./routes";
+import { User } from "./user";
+
+interface Store {
+  users: User[];
+}
+
+const store: Store = inMemoryStore;
 
 const app = express();
 const compiler = webpack(config);
@@ -25,4 +33,4 @@ app.use(
 // tslint:disable-next-line:no-console
 app.listen(3000, () => console.log("[SERVER] is up and running on 3000 ..."));
 
-export { app };
+export { app, store, Store };

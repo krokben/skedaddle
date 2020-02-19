@@ -44,7 +44,6 @@
     "body": "^5.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.0",
     "morgan": "^1.9.1",
     "net-object-stream": "^2.1.0",
     "react": "^16.12.0",
